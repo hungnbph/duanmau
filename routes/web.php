@@ -1,4 +1,12 @@
 <?php
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\CartController;
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\SliderController;
+use App\Http\Controllers\UserController;
+
+use Illuminate\Support\Facades\Auth;
 
 use Illuminate\Support\Facades\Route;
 
@@ -38,9 +46,7 @@ Route::group(['prefix'=>'font_end'], function(){
         ->name('user.add');
 
     Route::get('/user/show','UserController@index')
-        ->name('back_end.user.index')
-        // phân quyền
-        ->middleware('can:User.show');
+        ->name('back_end.user.index');
 
     Route::match(['get','post'],'/user/login','UserController@login')
         ->name('font_end.user.login');
@@ -53,8 +59,8 @@ Route::group(['prefix'=>'font_end'], function(){
 
     //edit account
     Route::match(['get','post'],'user/edit-{id}','UserController@edit')
-        ->name('user.edit')
-        ->middleware('can:user.edit');
+        ->name('user.edit');
+
 
 
     // show giỏ hàng
@@ -86,22 +92,18 @@ Route::group(['prefix'=>'back_end'], function(){
 
     // quản lí sản phẩm
     Route::match(['get','post'],'/product/add','ProductController@addProduct')
-        ->name('back_end.product.addProduct')
-        ->middleware('can:product.add');
+        ->name('back_end.product.addProduct');
 
     Route::get('/product/show','ProductController@index')
-        ->name('back_end.product.index')
-        ->middleware('can:product.show');
+        ->name('back_end.product.index');
 
     Route::match(['get', 'post'],'/product/edit/{id}', 'ProductController@edit')
         ->where(['id'=>'[0-9]+'])
-        ->name('back_end.product.edit')
-        ->middleware('can:product.edit');
+        ->name('back_end.product.edit');
 
     Route::match(['get', 'post'],'/product/xoa/{id}', 'ProductController@delete')
         ->where(['id'=>'[0-9]+'])
-        ->name('back_end.product.xoa')
-        ->middleware('can:product.xoa');
+        ->name('back_end.product.xoa');
 
     // tìm kiếm sản phẩm
     Route::get('product/search','ProductController@search')
@@ -110,41 +112,33 @@ Route::group(['prefix'=>'back_end'], function(){
 
     // quản lí danh mục
     Route::match(['get','post'],'/category/add','CategoryController@add')
-        ->name('back_end.category.add')
-        ->middleware('can:category.add');
+        ->name('back_end.category.add');
 
     Route::get('/category/show','CategoryController@showCategory')
-        ->name('back_end.category.showCategory')
-        ->middleware('can:category.show');
+        ->name('back_end.category.showCategory');
 
     Route::match(['get', 'post'],'/category/edit/{id_cate}', 'CategoryController@edit')
         ->where(['id_cate'=>'[0-9]+'])
-        ->name('back_end.category.edit')
-        ->middleware('can:category.edit');
+        ->name('back_end.category.edit');
 
     Route::match(['get', 'post'],'/category/xoa/{id_cate}', 'CategoryController@delete')
         ->where(['id_cate'=>'[0-9]+'])
-        ->name('back_end.category.xoa')
-        ->middleware('can:category.delete');
+        ->name('back_end.category.xoa');
 
     // quản lí slider
     Route::match(['get','post'],'/slider/add','SliderController@add')
-        ->name('back_end.slider.add')
-        ->middleware('can:slider.add');
+        ->name('back_end.slider.add');
 
     Route::get('/slider/show','SliderController@index')
-        ->name('back_end.slider.index')
-        ->middleware('can:slider.show');
+        ->name('back_end.slider.index');
 
     Route::match(['get', 'post'],'/slider/edit/{id}', 'SliderController@edit')
         ->where(['id'=>'[0-9]+'])
-        ->name('back_end.slider.edit')
-        ->middleware('can:slider.edit');
+        ->name('back_end.slider.edit');
 
     Route::match(['get', 'post'],'/slider/xoa/{id}', 'SliderController@xoa')
         ->where(['id'=>'[0-9]+'])
-        ->name('back_end.slider.xoa')
-        ->middleware('can:slider.xoa');
+        ->name('back_end.slider.xoa');
     //gửi Mail
     Route::match(['get', 'post'],'/mail','HomeController@sendMail')
         ->name('admin.sendMail');

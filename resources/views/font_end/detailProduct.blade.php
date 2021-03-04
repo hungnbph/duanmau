@@ -5,8 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Chi tiết sản phẩm</title>
         <link rel="stylesheet" type="text/css" href="../../../public/css/bootstrap.min.css" />
-        <script type="text/javascript" href="../../public/js/bootstrap.min.js"></script>
+        <script type="text/javascript" href="{{ asset('/bootstrap.min.js') }}"></script>
         <link rel="stylesheet" type="text/css" href="../../../public/css/main.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
@@ -66,7 +67,7 @@
                 <div class="row">
                     @foreach($query as $row)
                     <div class="col-6">
-                        <img src="../../../public/image/{{$row->image}}" alt="">
+                        <img src="image/{{$row->image}}" alt="">
                     </div>
                     <div class="col-6">
                         <a href=""><h4 >Điện thoại {{$row->name}}</h4></a>
@@ -99,7 +100,7 @@
             <div class="row">
                 <div class="col-md-2 col-sm-auto">
                     <img src="../../public/image/21.jpg" alt="" style="max-width: 100px;max-height: 100px;padding-bottom: 15px ;">
-                    <p>Le Anh Tien</p>
+                    <p>nguyễn bá hưng</p>
                 </div>
                 <div class="col-md-10 col-sm-auto">
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni itaque beatae fuga
@@ -114,7 +115,7 @@
                     <div class="form-group" style="max-width: 100%;">
                         <textarea class="form-control" rows="3"
                         name="content">
-                            
+
                         </textarea><br>
 
                         <button type="button" class="btn btn-outline-danger">Submit</button>

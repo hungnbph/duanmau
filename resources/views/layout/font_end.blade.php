@@ -2,9 +2,10 @@
 <html>
 <head>
     <title>Shop điện thoại</title>
-    <link rel="stylesheet" type="text/css" href="../../../public/css/bootstrap.min.css" />
-    <script type="text/javascript" href="js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="../../../public/css/main.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/bootstrap.min.css') }}" />
+    <script type="text/javascript" href="{{ asset('/js/bootstrap.min.js') }}"></script>
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/main.css') }}" />
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
@@ -21,7 +22,7 @@
 <!-- Menu -->
 <section class="menu_con">
 
-    <div class="container" style="background-color: #0c9a9a; height: 80px;">
+    <div class="container" style="background-color: #0c9a9a; height: 80px;  padding-left:10%;">
         @if (Auth::check())
 
             <p id="textChao">Chào bạn {{Auth::user()->username}}</p>
@@ -32,7 +33,7 @@
             <a href="{{route('font_end.user.login')}}" id="textChao">Đăng nhập</a>
 
         @endif
-       
+
     </div>
 </section>
 <section id="menu">

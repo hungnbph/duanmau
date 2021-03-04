@@ -1,7 +1,7 @@
 @extends('layout.font_end1')
 @section('home')
     <!-- menu-->
-    
+
     <section id="menu" >
         <div class="container" style="background-color: #ffffff">
             <nav class="navbar navbar-expand-lg navbar-light">
@@ -65,7 +65,7 @@
                         @endforeach
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <a  class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
             </a>
@@ -94,7 +94,7 @@
                   @foreach($showProduct as $RowPro)
                       <div class="col-lg-3 col-md-auto col-sm-auto" >
                           <div class="card" style=" width:100%;height: 360px;margin-top: 30px;">
-                              <img src="../public/image/{{$RowPro->image}}" height="180px;" class="card-img-top" alt="..." />
+                              <img src="image/{{$RowPro->image}}" height="180px;" class="card-img-top" alt="..." />
                               <div class="card-body">
 
                                   <a href="{{route('product.detail',['id'=>$RowPro->id])}}" style="text-decoration: none">
@@ -135,7 +135,7 @@
                 @foreach($showPrice as $Row)
                     <div class="col-lg-3 col-md-auto col-sm-auto" >
                         <div class="card" style=" width:100%;height: 360px;">
-                            <img src="../public/image/{{$Row->image}}" height="180px;" class="card-img-top" alt="..." />
+                            <img src="image/{{$Row->image}}" height="180px;" class="card-img-top" alt="..." />
                             <div class="card-body">
 
                                 <a href="{{route('product.detail',['id'=>$Row->id])}}" style="text-decoration: none">

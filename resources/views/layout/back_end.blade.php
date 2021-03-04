@@ -10,21 +10,24 @@
     <link rel="icon" href="images/logo.png" type="image/ico" />
     <title>Thêm  </title>
 
-    <link href="../../../public/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <link href="../../../public/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
-    <link href="../../../public/vendors/nprogress/nprogress.css" rel="stylesheet">
+    <link href="{{ asset('/vendors/bootstrap/dist/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('/css/bootstrap.min.css') }}">
 
-    <link href="../../../public/vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+    <link href="{{ asset('/vendors/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet">
 
-    <link href="../../../public/vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+    <link href="{{ asset('/vendors/nprogress/nprogress.css') }}" rel="stylesheet">
 
-    <link href="../../../public/vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet" />
+    <link href="{{ asset('/vendors/iCheck/skins/flat/green.css') }}" rel="stylesheet">
 
-    <link href="../../../public/vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+    <link href="{{ asset('/vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css') }}" rel="stylesheet">
 
-    <link href="../../../public/build/css/custom.min.css" rel="stylesheet">
+    <link href="{{ asset('/vendors/jqvmap/dist/jqvmap.min.css') }}" rel="stylesheet" />
+
+    <link href="{{ asset('/vendors/bootstrap-daterangepicker/daterangepicker.css') }}" rel="stylesheet">
+
+    <link href="{{ asset('/build/css/custom.min.css') }}" rel="stylesheet">
 </head>
 <body class="nav-md">
 <div class="container body">
@@ -125,40 +128,40 @@
 </div>
 
 
-<script src="../../../public/vendors/jquery/dist/jquery.min.js" type="41c5851190274a9cef3ff568-text/javascript"></script>
+<script src="{{ asset('/vendors/jquery/dist/jquery.min.js') }}" type="41c5851190274a9cef3ff568-text/javascript"></script>
 
-<script src="../../../public/vendors/bootstrap/dist/js/bootstrap.bundle.min.js" type="41c5851190274a9cef3ff568-text/javascript"></script>
+<script src="{{ asset('/vendors/bootstrap/dist/js/bootstrap.bundle.min.js') }}" type="41c5851190274a9cef3ff568-text/javascript"></script>
 
-<script src="../../../public/vendors/fastclick/lib/fastclick.js" type="41c5851190274a9cef3ff568-text/javascript"></script>
+<script src="{{ asset('/vendors/fastclick/lib/fastclick.js') }}" type="41c5851190274a9cef3ff568-text/javascript"></script>
 
-<script src="../../../public/vendors/nprogress/nprogress.js" type="41c5851190274a9cef3ff568-text/javascript"></script>
+<script src="{{ asset('/vendors/nprogress/nprogress.js') }}" type="41c5851190274a9cef3ff568-text/javascript"></script>
 
-<script src="../../../public/vendors/bootstrap-progressbar/bootstrap-progressbar.min.js" type="41c5851190274a9cef3ff568-text/javascript"></script>
+<script src="{{ asset('/vendors/bootstrap-progressbar/bootstrap-progressbar.min.js') }}" type="41c5851190274a9cef3ff568-text/javascript"></script>
 
-<script src="../../../public/vendors/iCheck/icheck.min.js" type="41c5851190274a9cef3ff568-text/javascript"></script>
+<script src="{{ asset('/vendors/iCheck/icheck.min.js') }}" type="41c5851190274a9cef3ff568-text/javascript"></script>
 
-<script src="../../../public/vendors/moment/min/moment.min.js" type="41c5851190274a9cef3ff568-text/javascript"></script>
-{{--<script src="../../../../public/vendors/bootstrap-daterangepicker/daterangepicker.js" type="41c5851190274a9cef3ff568-text/javascript"></script>--}}
+<script src="{{ asset('/vendors/moment/min/moment.min.js') }}" type="41c5851190274a9cef3ff568-text/javascript"></script>
+{{--<script src="{{ asset('/vendors/bootstrap-daterangepicker/daterangepicker.js') }}" type="41c5851190274a9cef3ff568-text/javascript"></script>--}}
 
-<script src="../../../public/vendors/bootstrap-wysiwyg/js/bootstrap-wysiwyg.min.js" type="41c5851190274a9cef3ff568-text/javascript"></script>
-<script src="../../../public/vendors/jquery.hotkeys/jquery.hotkeys.js" type="41c5851190274a9cef3ff568-text/javascript"></script>
-<script src="../../../public/vendors/google-code-prettify/src/prettify.js" type="41c5851190274a9cef3ff568-text/javascript"></script>
+<script src="{{ asset('/vendors/bootstrap-wysiwyg/js/bootstrap-wysiwyg.min.js') }}" type="41c5851190274a9cef3ff568-text/javascript"></script>
+<script src="{{ asset('/vendors/jquery.hotkeys/jquery.hotkeys.js') }}" type="41c5851190274a9cef3ff568-text/javascript"></script>
+<script src="{{ asset('/vendors/google-code-prettify/src/prettify.js') }}" type="41c5851190274a9cef3ff568-text/javascript"></script>
 
-<script src="../../../public/vendors/jquery.tagsinput/src/jquery.tagsinput.js" type="41c5851190274a9cef3ff568-text/javascript"></script>
+<script src="{{ asset('/vendors/jquery.tagsinput/src/jquery.tagsinput.js') }}" type="41c5851190274a9cef3ff568-text/javascript"></script>
 
-<script src="../../../public/vendors/switchery/dist/switchery.min.js" type="41c5851190274a9cef3ff568-text/javascript"></script>
+<script src="{{ asset('/vendors/switchery/dist/switchery.min.js') }}" type="41c5851190274a9cef3ff568-text/javascript"></script>
 
-<script src="../../../public/vendors/select2/dist/js/select2.full.min.js" type="41c5851190274a9cef3ff568-text/javascript"></script>
+<script src="{{ asset('/vendors/select2/dist/js/select2.full.min.js') }}" type="41c5851190274a9cef3ff568-text/javascript"></script>
 
-<script src="../../../public/vendors/parsleyjs/dist/parsley.min.js" type="41c5851190274a9cef3ff568-text/javascript"></script>
+<script src="{{ asset('/vendors/parsleyjs/dist/parsley.min.js') }}" type="41c5851190274a9cef3ff568-text/javascript"></script>
 
-<script src="../../../public/vendors/autosize/dist/autosize.min.js" type="41c5851190274a9cef3ff568-text/javascript"></script>
+<script src="{{ asset('/vendors/autosize/dist/autosize.min.js') }}" type="41c5851190274a9cef3ff568-text/javascript"></script>
 
-<script src="../../../public/vendors/devbridge-autocomplete/dist/jquery.autocomplete.min.js" type="41c5851190274a9cef3ff568-text/javascript"></script>
+<script src="{{ asset('/vendors/devbridge-autocomplete/dist/jquery.autocomplete.min.js') }}" type="41c5851190274a9cef3ff568-text/javascript"></script>
 
-<script src="../../../public/vendors/starrr/dist/starrr.js" type="41c5851190274a9cef3ff568-text/javascript"></script>
+<script src="{{ asset('/vendors/starrr/dist/starrr.js') }}" type="41c5851190274a9cef3ff568-text/javascript"></script>
 
-<script src="../../../public/build/js/custom.min.js" type="41c5851190274a9cef3ff568-text/javascript"></script>
-<script src="../../../public/ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="41c5851190274a9cef3ff568-|49" defer=""></script></body>
+<script src="{{ asset('/build/js/custom.min.js') }}" type="41c5851190274a9cef3ff568-text/javascript"></script>
+<script src="{{ asset('/ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js') }}" data-cf-settings="41c5851190274a9cef3ff568-|49" defer=""></script></body>
 
 </html>

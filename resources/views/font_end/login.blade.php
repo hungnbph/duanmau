@@ -8,7 +8,8 @@
   <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../../../public/css/login.css">
+  <link rel="stylesheet" href="{{ asset('/css/login.css') }}">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 </head>
 <body>
   <main>
@@ -17,7 +18,7 @@
         <div class="col-sm-6 login-section-wrapper">
           <div class="brand-wrapper">
             <a href="{{ route('home.index') }}">
-              <img src="../../../public/image/logo1.png" alt="logo" class="logo" style="width:180px;height:auto">
+              <img src="{{ asset('/image/logo1.png') }}" alt="logo" class="logo" style="width:180px;height:auto">
             </a>
           </div>
           <div class="login-wrapper my-auto">
@@ -25,7 +26,7 @@
             <form action="" method="post">
                 @csrf
                 @isset($errs)
-                
+
                 @foreach($errs as $e)
                     <p style="color: red;padding-left: 10px;padding-top: 10px;">
                         @if(is_array($e))
@@ -52,7 +53,7 @@
           </div>
         </div>
         <div class="col-sm-6 px-0 d-none d-sm-block">
-          <img src="../../../public/image/34.jpg" alt="login image" class="login-img">
+          <img src="{{ asset('/image/34.jpg') }}" alt="login image" class="login-img">
         </div>
       </div>
     </div>

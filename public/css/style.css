@@ -32,7 +32,7 @@ html,body{
 }
 .carousel-caption h1{
     font-size: 200%;
-    
+
     text-shadow: 2px 2px 10px #000;
 }
 .btn-primary{
@@ -51,11 +51,11 @@ html,body{
 	.carousel-caption h1{
 		font-size: 250%;
 	}
-	.carousel-caption h3{		
-		font-size: 160%;		
+	.carousel-caption h3{
+		font-size: 160%;
 	}
-	.carousel-caption .btn{		
-		font-size: 120%;		
+	.carousel-caption .btn{
+		font-size: 120%;
 	}
 }
 @media (max-width:768px){
@@ -65,11 +65,11 @@ html,body{
 	.carousel-caption h1{
 		font-size: 220%;
 	}
-	.carousel-caption h3{		
+	.carousel-caption h3{
 		font-size: 140%;
 		padding-bottom: 0.2rem;
 	}
-	.carousel-caption .btn{		
+	.carousel-caption .btn{
 		font-size: 95%;
 		padding: 8px 14px;
 	}
@@ -134,7 +134,7 @@ html,body{
 footer{
     background-color: #777;
     color:#fff;
-    
+
 }
 hr.light{
     border-top:1px solid #d5d5d5;
@@ -142,7 +142,7 @@ hr.light{
 }
 .card{
     margin:10px;
-    
+
 }
 @media (max-width:576px){
     .carousel-caption {
@@ -151,11 +151,12 @@ hr.light{
 	.carousel-caption h1{
 		font-size: 150%;
 	}
-	.carousel-caption h3{		
-		font-size: 110%;		
+	.carousel-caption h3{
+		font-size: 110%;
 	}
-	.carousel-caption .btn {		
+	.carousel-caption .btn {
 		font-size: 90%;
 		padding: 4px 8px;
-	}	
+	}
 }
+
